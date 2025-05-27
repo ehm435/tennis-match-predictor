@@ -1,3 +1,77 @@
+# 🇬🇧 English Version
+
+# Tennis Match Prediction with Logistic Regression
+
+This project aims to predict whether **Player A will win a tennis match**, using **supervised classification** techniques via logistic regression. It uses CSV-formatted historical match data.
+
+Data is preprocessed with `pandas`, turning categorical variables (like **match surface**) into binary variables (one-hot encoding). A logistic regression model is trained with `scikit-learn`, and its performance is evaluated using **accuracy** and a **confusion matrix**.
+
+## 🛠 Technologies Used
+
+- Python 3.x
+- pandas
+- scikit-learn
+- numpy (optional, for array handling)
+- matplotlib (optional, for visualization)
+
+## 📦 Installation
+
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/ehm435/tenis-match-predictor.git
+   cd tenis-match-predictor
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## ▶️ Execution
+
+Run from terminal. Ensure you have a CSV file with match data in the same folder or specify its path.
+
+```bash
+python tennis-match-predictor.py tennis_matches.csv
+```
+
+## 📊 Example Output
+
+```
+Model Accuracy: 0.73
+Confusion Matrix:
+[[87 15]
+ [20 78]]
+```
+
+Where:
+- Accuracy indicates the percentage of correct predictions.
+- The confusion matrix shows true positives, false positives, true negatives, and false negatives.
+
+## 💡 Future Improvements
+
+- Apply cross-validation techniques
+- Explore other classifiers (decision trees, SVM)
+- Add interactive visualizations for exploratory analysis
+- Use GridSearchCV for hyperparameter tuning
+- Save/load the model using `joblib`
+
+## 📁 Project Structure
+
+```
+tenis-logistic-regression/
+│
+├── tennis-match-predictor.py     # Main script
+├── requirements.txt              # Dependencies list
+├── README.md                     # This file
+└── tennis_matches.csv            # Example dataset
+```
+
+
+---
+
+# 🇪🇸 Versión en Español
+
 # Predicción de partidos de tenis con regresión logística
 
 Este proyecto tiene como objetivo predecir si el **jugador A ganará un partido de tenis**, utilizando técnicas de **clasificación supervisada** con regresión logística. Para ello, se emplean datos separados por ',' en formato CSV con información histórica de partidos.
@@ -76,4 +150,5 @@ tenis-logistic-regression/
 ├── README.md               # Este archivo
 └── tennis_matches.csv      # Dataset de ejemplo
 ```
+
 
